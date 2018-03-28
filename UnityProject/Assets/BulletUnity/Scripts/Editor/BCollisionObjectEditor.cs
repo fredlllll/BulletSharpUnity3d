@@ -62,14 +62,14 @@ public class BCollisionObjectEditor : Editor
     public static BulletSharp.CollisionFlags RenderEnumMaskCollisionFlagsField(GUIContent guiContent, BulletSharp.CollisionFlags enumVal)
     {
         GUICollisionFlags g = (GUICollisionFlags) enumVal;
-        g = (GUICollisionFlags)EditorGUILayout.EnumMaskField(guiContent, g);
+        g = (GUICollisionFlags)EditorGUILayout.EnumFlagsField(guiContent, g);
         return (BulletSharp.CollisionFlags) g;
     }
 
     public static BulletSharp.CollisionFilterGroups RenderEnumMaskCollisionFilterGroupsField(GUIContent guiContent, BulletSharp.CollisionFilterGroups enumVal)
     {
         GUICollisionFilterGroups g = (GUICollisionFilterGroups) enumVal;
-        g = (GUICollisionFilterGroups)EditorGUILayout.EnumMaskField(guiContent, g);
+        g = (GUICollisionFilterGroups)EditorGUILayout.EnumFlagsField(guiContent, g);
         return (BulletSharp.CollisionFilterGroups)g;
     }
 

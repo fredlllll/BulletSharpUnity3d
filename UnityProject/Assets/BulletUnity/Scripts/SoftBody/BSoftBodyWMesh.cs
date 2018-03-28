@@ -75,11 +75,12 @@ namespace BulletUnity
             go.transform.position = position;
             go.transform.rotation = rotation;
             BSoftBodyWMesh BSoft = go.AddComponent<BSoftBodyWMesh>();
-            MeshFilter meshFilter = go.AddComponent<MeshFilter>();
+            /*MeshFilter meshFilter = */go.AddComponent<MeshFilter>();
             MeshRenderer meshRenderer = go.AddComponent<MeshRenderer>();
             BSoft.meshSettings.UserMesh = mesh;
             UnityEngine.Material material = new UnityEngine.Material(Shader.Find("Standard"));
             meshRenderer.material = material;
+            /*meshFilter.sharedMesh = mesh;*/
 
             BSoft.SoftBodySettings.ResetToSoftBodyPresets(sBpresetSelect); //Apply SoftBody settings presets
 

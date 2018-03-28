@@ -266,7 +266,7 @@ public class BSoftBodyPartOnSkinnedMesh : BSoftBody
             }
         }
 
-        SoftBody sb = (SoftBody)m_collisionObject;
+        //SoftBody sb = (SoftBody)m_collisionObject;
         Debug.LogFormat("Done binding bones to nodes and nodes to anchors. Found: {0} bones and {1} anchor nodes.", bone2idxMap.Length, numAnchorNodes);
 	}
 
@@ -282,7 +282,6 @@ public class BSoftBodyPartOnSkinnedMesh : BSoftBody
     {
         int numMappedBones = 0;
         int numAnchorNodes = 0;
-        System.Text.StringBuilder sb = new System.Text.StringBuilder();
         if (bone2idxMap != null)
         {
             numMappedBones = bone2idxMap.Length;

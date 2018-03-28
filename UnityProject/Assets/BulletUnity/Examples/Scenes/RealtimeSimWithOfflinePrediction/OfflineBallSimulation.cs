@@ -39,7 +39,7 @@ public static class OfflineBallSimulation {
             if (co != null && co.UserObject is BRigidBody)
             {
                 BRigidBody rb = (BRigidBody) co.UserObject;
-                float mass = rb.isDynamic() ? rb.mass : 0f;
+                //float mass = rb.isDynamic() ? rb.mass : 0f;
                 BCollisionShape existingShape = rb.GetComponent<BCollisionShape>();
                 CollisionShape shape = null;
                 if (existingShape is BSphereShape)
@@ -70,7 +70,7 @@ public static class OfflineBallSimulation {
 		//Step the simulation numberOfSimulationSteps times
 		for (int i = 0; i < numberOfSimulationSteps; i++)
 		{
-			int numSteps = World.StepSimulation(1f / 60f, 10, 1f / 60f);
+			/*int numSteps = */World.StepSimulation(1f / 60f, 10, 1f / 60f);
 			ballPositions.Add(bulletBallRb.WorldTransform.Origin.ToUnity());
         }
 

@@ -36,17 +36,17 @@ namespace ConvexDecompositionDemo
         // MyContactCallback is just an example to show how to get access to the child shape that collided
         void MyContactCallback(ManifoldPoint cp, CollisionObjectWrapper colObj0Wrap, int partId0, int index0, CollisionObjectWrapper colObj1Wrap, int partId1, int index1)
         {
-            if (colObj0Wrap.CollisionObject.CollisionShape.ShapeType == BroadphaseNativeType.CompoundShape)
+            if(colObj0Wrap.CollisionObject.CollisionShape.ShapeType == BroadphaseNativeType.CompoundShape)
             {
                 CompoundShape compound = colObj0Wrap.CollisionObject.CollisionShape as CompoundShape;
-                CollisionShape childShape = compound.GetChildShape(index0);
+                //CollisionShape childShape = compound.GetChildShape(index0);
                 //UnityEngine.Debug.LogFormat(childShape.ToString());
             }
 
-            if (colObj1Wrap.CollisionObject.CollisionShape.ShapeType == BroadphaseNativeType.CompoundShape)
+            if(colObj1Wrap.CollisionObject.CollisionShape.ShapeType == BroadphaseNativeType.CompoundShape)
             {
                 CompoundShape compound = colObj1Wrap.CollisionObject.CollisionShape as CompoundShape;
-                CollisionShape childShape = compound.GetChildShape(index1);
+                //CollisionShape childShape = compound.GetChildShape(index1);
                 //UnityEngine.Debug.LogFormat(childShape.ToString());
             }
         }
@@ -103,7 +103,7 @@ namespace ConvexDecompositionDemo
             System.IO.Stream byteStream = new System.IO.MemoryStream(bytes.bytes);
 
             int tcount = wo.LoadObj(byteStream);
-            if (tcount == 0)
+            if(tcount == 0)
             {
                 return;
             }
@@ -117,7 +117,7 @@ namespace ConvexDecompositionDemo
             List<Vector3> vertices = wo.Vertices;
 
             int i;
-            for (i = 0; i < tcount; i++)
+            for(i = 0; i < tcount; i++)
             {
                 int index0 = indices[i * 3];
                 int index1 = indices[i * 3 + 1];
@@ -132,15 +132,15 @@ namespace ConvexDecompositionDemo
 
             // Create a hull approximation
             ConvexHullShape convexShape;
-            using (var tmpConvexShape = new ConvexTriangleMeshShape(trimesh))
+            using(var tmpConvexShape = new ConvexTriangleMeshShape(trimesh))
             {
-                using (var hull = new ShapeHull(tmpConvexShape))
+                using(var hull = new ShapeHull(tmpConvexShape))
                 {
                     hull.BuildHull(tmpConvexShape.Margin);
                     convexShape = new ConvexHullShape(hull.Vertices);
                 }
             }
-            if (sEnableSAT)
+            if(sEnableSAT)
             {
                 convexShape.InitializePolyhedralFeatures();
             }
@@ -184,7 +184,7 @@ namespace ConvexDecompositionDemo
             var convexDecomposition = new ConvexDecomposition(writer, this);
             convexDecomposition.LocalScaling = localScaling;
 
-            for (int c = 0; c < hacd.NClusters; c++)
+            for(int c = 0; c < hacd.NClusters; c++)
             {
                 int nVertices = hacd.GetNPointsCH(c);
                 int trianglesLen = hacd.GetNTrianglesCH(c) * 3;
@@ -192,14 +192,14 @@ namespace ConvexDecompositionDemo
                 long[] triangles = new long[trianglesLen];
                 hacd.GetCH(c, points, triangles);
 
-                if (trianglesLen == 0)
+                if(trianglesLen == 0)
                 {
                     continue;
                 }
 
                 Vector3[] verticesArray = new Vector3[nVertices];
                 int vi3 = 0;
-                for (int vi = 0; vi < nVertices; vi++)
+                for(int vi = 0; vi < nVertices; vi++)
                 {
                     verticesArray[vi] = new Vector3(
                         (float)points[vi3], (float)points[vi3 + 1], (float)points[vi3 + 2]);
@@ -207,7 +207,7 @@ namespace ConvexDecompositionDemo
                 }
 
                 int[] trianglesInt = new int[trianglesLen];
-                for (int ti = 0; ti < trianglesLen; ti++)
+                for(int ti = 0; ti < trianglesLen; ti++)
                 {
                     trianglesInt[ti] = (int)triangles[ti];
                 }
@@ -218,12 +218,12 @@ namespace ConvexDecompositionDemo
 
             // Combine convex shapes into a compound shape
             var compound = new CompoundShape();
-            for (i = 0; i < convexDecomposition.convexShapes.Count; i++)
+            for(i = 0; i < convexDecomposition.convexShapes.Count; i++)
             {
                 Vector3 centroid = convexDecomposition.convexCentroids[i];
                 var convexShape2 = convexDecomposition.convexShapes[i];
                 Matrix trans = Matrix.Translation(centroid);
-                if (sEnableSAT)
+                if(sEnableSAT)
                 {
                     convexShape2.InitializePolyhedralFeatures();
                 }
@@ -256,10 +256,10 @@ namespace ConvexDecompositionDemo
         {
             base.OnHandleInput();
 
-            if (Input.KeysPressed.Contains(Keys.T))
+            if(Input.KeysPressed.Contains(Keys.T))
             {
                 sEnableSAT = !sEnableSAT;
-                if (sEnableSAT)
+                if(sEnableSAT)
                 {
                     Console.WriteLine("SAT enabled after the next restart of the demo");
                 }
@@ -274,7 +274,7 @@ namespace ConvexDecompositionDemo
         {
             base.ExitPhysics();
 
-            foreach (var trimesh in trimeshes)
+            foreach(var trimesh in trimeshes)
             {
                 trimesh.Dispose();
             }
@@ -286,7 +286,7 @@ namespace ConvexDecompositionDemo
         [STAThread]
         static void Main()
         {
-            using (Demo demo = new ConvexDecompositionDemo())
+            using(Demo demo = new ConvexDecompositionDemo())
             {
                 GraphicsLibraryManager.Run(demo);
             }

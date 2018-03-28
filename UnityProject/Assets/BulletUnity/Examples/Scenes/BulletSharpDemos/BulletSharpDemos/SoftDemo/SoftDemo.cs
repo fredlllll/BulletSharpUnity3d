@@ -1035,7 +1035,7 @@ namespace SoftDemo
             ls.Position = psb2.ClusterCom(0); psb2.AppendLinearJoint(ls, prbBody);
 
             BoxShape pbox = new BoxShape(20, 1, 40);
-            RigidBody pgrn = LocalCreateRigidBody(0, Matrix.RotationZ(-(float)Math.PI / 4), pbox);
+            /*RigidBody pgrn = */LocalCreateRigidBody(0, Matrix.RotationZ(-(float)Math.PI / 4), pbox);
         }
 
         void Init_ClusterStackSoft()
