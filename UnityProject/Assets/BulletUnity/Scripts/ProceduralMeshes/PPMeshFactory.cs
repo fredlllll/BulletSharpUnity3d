@@ -31,7 +31,6 @@ namespace BulletUnity
         public bool recalculateNormals = false;
         public bool addBackFaceTriangles = false;
         public bool recalculateBounds = true;
-        public bool optimize = true;
 
         public override Mesh Build()
         {
@@ -45,7 +44,7 @@ namespace BulletUnity
             Mesh mesh = (Mesh)GameObject.Instantiate(UserMesh);  //create a copy of UserMesh, dont overwrite prefabs
 
             mesh.ApplyMeshPostProcessing(autoWeldVertices, autoWeldThreshold, addBackFaceTriangles,
-                 recalculateNormals, recalculateBounds, optimize);
+                 recalculateNormals, recalculateBounds);
 
             return mesh;
         }
@@ -197,7 +196,6 @@ namespace BulletUnity
         public bool recalculateNormals = false;
         public bool addBackFaceTriangles = false;
         public bool recalculateBounds = true;
-        public bool optimize = true;
 
         public override Mesh Build()
         {

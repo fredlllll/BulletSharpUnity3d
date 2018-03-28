@@ -76,7 +76,6 @@ namespace BulletUnity
                 bSoft.meshSettings.recalculateNormals = anyMeshSettings.recalculateNormals;
                 bSoft.meshSettings.addBackFaceTriangles = anyMeshSettings.addBackFaceTriangles;
                 bSoft.meshSettings.recalculateBounds = anyMeshSettings.recalculateBounds;
-                bSoft.meshSettings.optimize = anyMeshSettings.optimize;
 
                 bSoft.SoftBodySettings = SoftBodySettings;  //play with settings
 

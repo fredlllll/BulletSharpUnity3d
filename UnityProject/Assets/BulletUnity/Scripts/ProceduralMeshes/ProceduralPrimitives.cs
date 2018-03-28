@@ -1262,7 +1262,6 @@ namespace BulletUnity
                 mesh.normals = normales;
 
                 mesh.RecalculateBounds();
-                mesh.Optimize();
                 return mesh;
             }
         }
