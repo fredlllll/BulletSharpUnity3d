@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System;
-using System.Collections;
-using BulletSharp.Math;
 using BulletSharp;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     [System.Serializable]
     public abstract class BCollisionShape : MonoBehaviour, IDisposable {
         public enum CollisionShapeType {

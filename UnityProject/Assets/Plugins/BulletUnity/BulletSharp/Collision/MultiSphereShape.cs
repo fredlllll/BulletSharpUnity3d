@@ -1,12 +1,11 @@
 using System;
-using System.IO;
 using System.Runtime.InteropServices;
 using System.Security;
 using BulletSharp.Math;
 
 namespace BulletSharp
 {
-	public class MultiSphereShape : ConvexInternalAabbCachingShape
+    public class MultiSphereShape : ConvexInternalAabbCachingShape
 	{
         public MultiSphereShape(Vector3[] positions, float[] radi)
             : base(btMultiSphereShape_new(positions, radi, (radi.Length < positions.Length) ? radi.Length : positions.Length))

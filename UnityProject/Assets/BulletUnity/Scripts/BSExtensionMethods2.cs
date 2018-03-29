@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
-using System;
-using System.IO;
-using System.Collections;
-using System.Reflection;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     public static class BSExtensionMethods2 {
 
         public static BulletSharp.Math.Quaternion ToBullet(this UnityEngine.Quaternion v) {

@@ -1,6 +1,5 @@
 ﻿
 using System;
-using System.Collections;
 using BulletSharp;
 using BulletSharp.Math;
 using System.Collections.Generic;
@@ -10,7 +9,8 @@ using BulletUnity;
 This class contains functions and classes that look like the ones the BulletSharp DemoFramework is
 expecting. Some are stubs, some are wrappers for Unity classes. This allows the BulletSharp demo code to work with minimal changes.
 */
-namespace BulletSharpExamples {
+namespace BulletSharpExamples
+{
 
 
     public enum Keys {

@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     public class BBvhTriangleMeshShape : BCollisionShape {
         [SerializeField]
         protected Mesh hullMesh;

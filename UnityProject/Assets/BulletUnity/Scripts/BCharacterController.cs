@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections;
 using BulletSharp;
 
 namespace BulletUnity
 {
-	[AddComponentMenu("Physics Bullet/Character Controller")]
+    [AddComponentMenu("Physics Bullet/Character Controller")]
     public class BCharacterController : BPairCachingGhostObject
     {
 

@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 using BulletSharp.SoftBody;
-using BulletUnity;
 
 public class BulletRopeProxy : MonoBehaviour {
     public SoftBody target;

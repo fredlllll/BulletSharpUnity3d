@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using UnityEditor;
 using BulletUnity;
-using System.Collections;
 
 public class BTypedConstraintEditor {
 

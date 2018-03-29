@@ -1,10 +1,10 @@
 ﻿using System;
 using UnityEngine;
-using System.Collections;
 using BulletSharp;
 using BM = BulletSharp.Math;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
 
     [System.Serializable]
     public abstract class BTypedConstraint : MonoBehaviour, IDisposable {

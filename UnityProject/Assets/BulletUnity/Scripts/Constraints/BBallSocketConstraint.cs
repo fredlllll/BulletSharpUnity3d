@@ -1,10 +1,8 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
-using BM = BulletSharp.Math;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     [AddComponentMenu("Physics Bullet/Constraints/Ball Socket")]
     public class BBallSocketConstraint : BTypedConstraint {
 

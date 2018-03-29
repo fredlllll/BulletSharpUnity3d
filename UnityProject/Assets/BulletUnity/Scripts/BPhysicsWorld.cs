@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using System.Collections;
 using BulletSharp;
 using BulletSharp.SoftBody;
 using System.Collections.Generic;
@@ -9,7 +8,7 @@ using BulletUnity.Debugging;
 
 namespace BulletUnity
 {
-  public class BPhysicsWorld : MonoBehaviour, IDisposable
+    public class BPhysicsWorld : MonoBehaviour, IDisposable
   {
 
     public enum WorldType

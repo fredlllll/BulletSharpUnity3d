@@ -1,16 +1,15 @@
 ﻿using System;
 using UnityEngine;
 using BulletSharp;
-using BulletSharp.Math;
-using System.Collections;
 using BulletUnity.Debugging;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     /*
         todo 
         continuous collision detection ccd
         */
-	[AddComponentMenu("Physics Bullet/RigidBody")]
+    [AddComponentMenu("Physics Bullet/RigidBody")]
     public class BRigidBody : BCollisionObject, IDisposable {
         BGameObjectMotionState m_motionState;
 

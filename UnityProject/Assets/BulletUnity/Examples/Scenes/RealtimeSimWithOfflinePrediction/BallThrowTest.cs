@@ -1,8 +1,5 @@
 ﻿using UnityEngine;
 using BulletUnity;
-using BulletUnity.Primitives;
-using BulletSharp;
-using System.Collections;
 using System.Collections.Generic;
 
 

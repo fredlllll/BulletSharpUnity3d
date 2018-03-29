@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 
-namespace BulletUnity {
-	[AddComponentMenu("Physics Bullet/Shapes/Box")]
+namespace BulletUnity
+{
+    [AddComponentMenu("Physics Bullet/Shapes/Box")]
     public class BBoxShape : BCollisionShape {
         //public Vector3 extents = Vector3.one;
 

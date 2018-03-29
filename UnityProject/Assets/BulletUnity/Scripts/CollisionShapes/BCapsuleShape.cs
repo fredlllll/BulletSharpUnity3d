@@ -1,11 +1,10 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
 
-	[AddComponentMenu("Physics Bullet/Shapes/Capsule")]
+    [AddComponentMenu("Physics Bullet/Shapes/Capsule")]
     public class BCapsuleShape : BCollisionShape {
         public enum CapsuleAxis
         {

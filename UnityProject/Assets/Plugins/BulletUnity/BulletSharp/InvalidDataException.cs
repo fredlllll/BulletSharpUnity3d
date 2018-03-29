@@ -1,8 +1,7 @@
-﻿using UnityEngine;
-using System;
-using System.Collections;
+﻿using System;
 
-namespace BulletSharp {
+namespace BulletSharp
+{
     public class InvalidDataException : Exception {
 
     }

@@ -1,8 +1,7 @@
 using UnityEngine;
-using System.Collections;
-using BulletSharp;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     public class BUtility {
         public const float Two_PI = 6.283185307179586232f;
         public const float RADS_PER_DEG = Two_PI / 360.0f;

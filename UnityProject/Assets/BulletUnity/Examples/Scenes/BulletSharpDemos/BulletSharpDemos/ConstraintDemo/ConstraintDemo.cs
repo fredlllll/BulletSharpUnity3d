@@ -2,7 +2,6 @@
 using BulletSharp.Math;
 using DemoFramework;
 using System;
-using BulletUnity;
 using BulletSharpExamples;
 
 namespace ConstraintDemo

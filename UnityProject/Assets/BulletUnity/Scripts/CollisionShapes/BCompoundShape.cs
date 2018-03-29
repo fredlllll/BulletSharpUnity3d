@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     /*
     Doesn't check for changes in the transforms on the child objects or the transforms between 
     the child colliders and the compound collider. If the child colliders change then 

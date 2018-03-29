@@ -1,12 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 using BulletSharp;
 using BM = BulletSharp.Math;
 using System;
-using System.Runtime.InteropServices;
-using AOT;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     public class BGameObjectMotionState : MotionState, IDisposable {
 
         public Transform transform;

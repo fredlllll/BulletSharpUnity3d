@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using BulletUnity;
 using BulletSharp;
-using BulletSharp.Math;
 
 public static class OfflineBallSimulation {
     public static DiscreteDynamicsWorld World;

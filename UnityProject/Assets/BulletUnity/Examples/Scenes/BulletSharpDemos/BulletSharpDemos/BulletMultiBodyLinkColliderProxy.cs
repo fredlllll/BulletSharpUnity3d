@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 using BulletSharp;
-using BulletSharp.Math;
 using BulletUnity;
 
 public class BulletMultiBodyLinkColliderProxy : MonoBehaviour {

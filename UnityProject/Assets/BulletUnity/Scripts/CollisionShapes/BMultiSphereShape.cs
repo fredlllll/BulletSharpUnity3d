@@ -1,11 +1,11 @@
 ﻿using System;
 using UnityEngine;
-using System.Collections;
 using BulletSharp;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
 
-	[AddComponentMenu("Physics Bullet/Shapes/Multi Sphere")]
+    [AddComponentMenu("Physics Bullet/Shapes/Multi Sphere")]
     public class BMultiSphereShape : BCollisionShape {
         [Serializable]
         public struct Sphere {

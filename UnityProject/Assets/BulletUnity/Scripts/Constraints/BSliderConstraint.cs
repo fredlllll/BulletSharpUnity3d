@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 using BM = BulletSharp.Math;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     [AddComponentMenu("Physics Bullet/Constraints/Slider")]
     public class BSliderConstraint : BTypedConstraint {
         public static string HelpMessage = "X (red) is slide axis. Angular limits are measured from Y (green) toward Z. \n" +

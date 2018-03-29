@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 using BulletSharp.SoftBody;
 using System;
 //using BulletSharp;
-using System.Collections.Generic;
 
 namespace BulletUnity
 {

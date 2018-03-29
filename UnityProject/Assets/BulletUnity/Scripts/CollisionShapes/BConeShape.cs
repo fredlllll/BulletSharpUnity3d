@@ -1,11 +1,9 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 
 namespace BulletUnity
 {
-	[AddComponentMenu("Physics Bullet/Shapes/Cone")]
+    [AddComponentMenu("Physics Bullet/Shapes/Cone")]
     public class BConeShape : BCollisionShape
     {
         [SerializeField]

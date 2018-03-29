@@ -1,11 +1,8 @@
 using System;
-using System.Runtime.InteropServices;
-using System.Security;
-using BulletSharp.Math;
 
 namespace BulletSharp
 {
-	public class SimpleBroadphaseProxy : BroadphaseProxy
+    public class SimpleBroadphaseProxy : BroadphaseProxy
 	{
 		internal SimpleBroadphaseProxy(IntPtr native)
 			: base(native)

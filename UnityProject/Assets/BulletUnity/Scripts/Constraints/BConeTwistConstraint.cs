@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 using BM = BulletSharp.Math;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     [AddComponentMenu("Physics Bullet/Constraints/Cone Twist")]
     public class BConeTwistConstraint : BTypedConstraint {
         public static string HelpMessage = "btConeTwistConstraint can be used to simulate ragdoll joints (upper arm, leg etc)." +

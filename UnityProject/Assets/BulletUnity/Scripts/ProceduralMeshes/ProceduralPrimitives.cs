@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.Collections.Generic;
 //using System.IO;
 //using System.Runtime.InteropServices;
 //using BulletSharp;
 //using BulletSharp.Math;
 using UnityEngine;
-using BulletUnity;
 
 //http://wiki.unity3d.com/index.php/ProceduralPrimitives
 

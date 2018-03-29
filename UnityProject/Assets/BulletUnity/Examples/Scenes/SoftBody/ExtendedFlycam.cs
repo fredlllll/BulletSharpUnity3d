@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 //http://wiki.unity3d.com/index.php/FlyCam_Extended
 

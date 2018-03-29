@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System;
 
-namespace BulletUnity.Debugging {
-	public static class BDebug
+namespace BulletUnity.Debugging
+{
+    public static class BDebug
     {
         [Flags]
         public enum DebugType

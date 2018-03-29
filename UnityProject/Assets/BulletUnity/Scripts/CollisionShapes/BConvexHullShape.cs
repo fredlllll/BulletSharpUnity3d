@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 
-namespace BulletUnity {
-	[AddComponentMenu("Physics Bullet/Shapes/Convex Hull")]
+namespace BulletUnity
+{
+    [AddComponentMenu("Physics Bullet/Shapes/Convex Hull")]
     public class BConvexHullShape : BCollisionShape {
         [SerializeField]
         protected Mesh hullMesh;

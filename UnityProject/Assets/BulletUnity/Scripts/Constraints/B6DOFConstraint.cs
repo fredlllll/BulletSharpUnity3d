@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 using BM = BulletSharp.Math;
 
-namespace BulletUnity {
+namespace BulletUnity
+{
     [AddComponentMenu("Physics Bullet/Constraints/6 Degree Of Freedom")]
     public class B6DOFConstraint : BTypedConstraint {
         //Todo not sure if this is working

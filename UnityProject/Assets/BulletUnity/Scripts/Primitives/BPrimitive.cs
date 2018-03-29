@@ -1,9 +1,5 @@
-﻿using System;
-using UnityEngine;
-using BulletSharp;
+﻿using UnityEngine;
 //using BulletSharp.Math;
-using System.Collections;
-using BulletUnity;
 
 namespace BulletUnity.Primitives
 {

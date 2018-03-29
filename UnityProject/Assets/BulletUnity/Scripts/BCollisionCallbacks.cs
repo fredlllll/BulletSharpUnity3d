@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 using BulletSharp;
-using System;
 
 namespace BulletUnity
 {

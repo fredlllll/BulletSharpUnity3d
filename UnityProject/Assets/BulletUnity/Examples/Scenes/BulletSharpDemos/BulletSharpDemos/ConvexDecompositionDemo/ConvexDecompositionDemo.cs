@@ -39,14 +39,14 @@ namespace ConvexDecompositionDemo
             if(colObj0Wrap.CollisionObject.CollisionShape.ShapeType == BroadphaseNativeType.CompoundShape)
             {
                 CompoundShape compound = colObj0Wrap.CollisionObject.CollisionShape as CompoundShape;
-                //CollisionShape childShape = compound.GetChildShape(index0);
+                CollisionShape childShape = compound.GetChildShape(index0);
                 //UnityEngine.Debug.LogFormat(childShape.ToString());
             }
 
             if(colObj1Wrap.CollisionObject.CollisionShape.ShapeType == BroadphaseNativeType.CompoundShape)
             {
                 CompoundShape compound = colObj1Wrap.CollisionObject.CollisionShape as CompoundShape;
-                //CollisionShape childShape = compound.GetChildShape(index1);
+                CollisionShape childShape = compound.GetChildShape(index1);
                 //UnityEngine.Debug.LogFormat(childShape.ToString());
             }
         }

@@ -1,8 +1,4 @@
-﻿using System;
-using UnityEngine;
-
-using System.Collections;
-using BulletUnity;
+﻿using UnityEngine;
 
 namespace BulletUnity.Primitives
 {

@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.InteropServices;
 using BulletSharp;
-using BulletSharp.Math;
 using UnityEngine;
 using BulletUnity;
 
-namespace DemoFramework {
+namespace DemoFramework
+{
     public class MeshFactory2 {
 
         public static void CreateShape(CollisionShape shape, Mesh mesh) {

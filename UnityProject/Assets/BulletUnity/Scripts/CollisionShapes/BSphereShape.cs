@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 using BulletSharp;
 
-namespace BulletUnity {
-	[AddComponentMenu("Physics Bullet/Shapes/Sphere")]
+namespace BulletUnity
+{
+    [AddComponentMenu("Physics Bullet/Shapes/Sphere")]
     public class BSphereShape : BCollisionShape {
         [SerializeField]
         protected float radius = 1f;

@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using BulletSharp;
-using BulletSharpExamples;
 using DemoFramework;
 using BulletUnity;
 
